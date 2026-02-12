@@ -40,7 +40,7 @@ ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS_STR.split(',') if host.s
 if not ALLOWED_HOSTS:
     if ENVIRONMENT == 'railway':
         # Default Railway hosts
-        ALLOWED_HOSTS = ['.railway.app', '.up.railway.app']
+        ALLOWED_HOSTS = ['.railway.app', '.up.railway.app', '.pa-mfalme-production-37b4.up.railway.app' ]
         print("⚠️  No ALLOWED_HOSTS set, using Railway defaults")
     else:
         ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0.0.0.0']
